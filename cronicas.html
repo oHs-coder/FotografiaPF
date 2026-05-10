@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronicas del Camino | Galería</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Mismos estilos base de tu página principal */
+        :root {
+            --bg-color: #0f0f11;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --accent-color: #d4af37; 
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        h1, h2 { font-family: 'Playfair Display', serif; font-weight: 400; text-align: center; }
+        
+        .header-gallery { margin-bottom: 50px; }
+        .header-gallery h1 { color: var(--accent-color); font-size: 2.5rem; letter-spacing: 2px; }
+        .header-gallery p { color: var(--text-muted); text-align: center; max-width: 600px; margin: 10px auto; }
+
+        /* Botón para volver al inicio */
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--text-muted);
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 8px 15px;
+            transition: all 0.3s ease;
+        }
+        .back-btn:hover { border-color: var(--accent-color); color: var(--accent-color); }
+
+        /* Cuadrícula de fotos */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: auto;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .photo-grid img:hover {
+            transform: scale(1.02); /* Pequeño zoom al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-btn">← Volver al Portafolio</a>
+
+    <div class="header-gallery">
+        <h1>Cronicas del Camino</h1>
+        <p>Serie fotográfica que captura la esencia del transporte publico y que cada uno tiene un camino en el.</p>
+    </div>
+
+    <!-- Contenedor del PDF -->
+    <div class="pdf-container" style="text-align: center; margin: 40px 0;">
+        
+        <iframe src="Crónicas del Camino - Portafolio Fotográfico.pdf" width="100%" height="600px" style="border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px;">
+            <!-- Este texto solo aparece si el navegador del usuario es muy antiguo y no soporta PDFs -->
+            <p>Tu navegador no soporta la visualización de PDFs. Puedes <a href="Crónicas del Camino - Portafolio Fotográfico.pdf" style="color: #d4af37;">descargar el documento aquí</a>.</p>
+        </iframe>
+
+    </div>
+
+</body>
+</html>
