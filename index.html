@@ -3,18 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página</title>
+    <title>Hosman Nieto | Portafolio Fotográfico</title>
+    <!-- Importando fuentes elegantes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    
     <style>
+        /* Paleta de colores y ajustes generales */
+        :root {
+            --bg-color: #0f0f11;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --accent-color: #d4af37; /* Dorado champaña elegante */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        /* Encabezado */
+        header {
             text-align: center;
-            margin-top: 50px;
-            background-color: #f4f4f9;
+            padding: 100px 20px 60px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: var(--text-main);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* Secciones: Bio y Statement */
+        section {
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .text-content {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            text-align: justify;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Sección de Proyectos */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background-color: #1a1a1c;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 250px;
+            background-color: #2a2a2d; /* Color de fondo mientras pones tus fotos reales */
+            object-fit: cover;
+            display: block;
+        }
+
+        .project-info {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .project-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .project-info p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <h1>¡Hola Mundo!</h1>
-    <p>Esta página está alojada en GitHub Pages y editada desde VS Code.</p>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Hosman Nieto</h1>
+        <p>Fotografía & Dirección de Arte</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Sección: Biografía -->
+        <section id="biografia">
+            <h2 class="section-title">Biografía</h2>
+            <div class="text-content">
+                <p>
+                    Soy fotógrafo narrativo y de producto radicado en Bogotá. A través del lente, busco transformar lo cotidiano en composiciones estéticas y estructuradas. Mi enfoque combina la precisión técnica con una sensibilidad artística, permitiéndome capturar no solo la imagen de un sujeto o producto, sino la esencia y la historia que lo habita.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección: Statement -->
+        <section id="statement">
+            <h2 class="section-title">Statement</h2>
+            <div class="text-content">
+                <p>
+                    Mi fotografía es un ejercicio de observación y transformación. Creo que la luz y la sombra son herramientas narrativas capaces de alterar nuestra percepción de la realidad. Mi trabajo se centra en explorar la tensión entre el sujeto y su entorno, construyendo imágenes que invitan a la pausa y a la contemplación. Cada obturación es una decisión deliberada para inmortalizar un concepto visual profundo.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección: Proyectos -->
+        <section id="proyectos">
+            <h2 class="section-title">Proyectos Fotográficos</h2>
+            
+            <div class="projects-grid">
+                
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <!-- Cambia "ruta-de-tu-imagen.jpg" por la ruta real de tu foto -->
+                    <img src="https://via.placeholder.com/600x400/2a2a2d/d4af37?text=Foto+Alquimia+Visual" alt="Alquimia Visual" class="project-image">
+                    <div class="project-info">
+                        <h3>Alquimia Visual</h3>
+                        <p>Una exploración profunda del concepto de performance, transformando la expresión corporal y el entorno en narrativa visual.</p>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400/2a2a2d/d4af37?text=Foto+Proyecto+2" alt="Fotografía de Producto" class="project-image">
+                    <div class="project-info">
+                        <h3>Luz y Producto</h3>
+                        <p>Estudio de iluminación y texturas enfocado en destacar la materialidad y el diseño de objetos cotidianos.</p>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400/2a2a2d/d4af37?text=Foto+Proyecto+3" alt="Narrativa" class="project-image">
+                    <div class="project-info">
+                        <h3>Retrato Narrativo</h3>
+                        <p>Serie fotográfica que captura la esencia de los sujetos a través de composiciones íntimas y dramáticas.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Hosman Nieto. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
