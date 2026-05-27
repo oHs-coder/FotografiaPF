@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impases del Arte | Galería</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+
     <style>
         /* Mismos estilos base de tu página principal */
         :root {
             --bg-color: #0f0f11;
             --text-main: #e0e0e0;
             --text-muted: #a0a0a0;
-            --accent-color: #d4af37; 
+            --accent-color: #d4af37;
         }
 
         body {
@@ -23,11 +26,29 @@
             padding: 40px 20px;
         }
 
-        h1, h2 { font-family: 'Playfair Display', serif; font-weight: 400; text-align: center; }
-        
-        .header-gallery { margin-bottom: 50px; }
-        .header-gallery h1 { color: var(--accent-color); font-size: 2.5rem; letter-spacing: 2px; }
-        .header-gallery p { color: var(--text-muted); text-align: center; max-width: 600px; margin: 10px auto; }
+        h1,
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .header-gallery {
+            margin-bottom: 50px;
+        }
+
+        .header-gallery h1 {
+            color: var(--accent-color);
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        .header-gallery p {
+            color: var(--text-muted);
+            text-align: center;
+            max-width: 600px;
+            margin: 10px auto;
+        }
 
         /* Botón para volver al inicio */
         .back-btn {
@@ -39,7 +60,11 @@
             padding: 8px 15px;
             transition: all 0.3s ease;
         }
-        .back-btn:hover { border-color: var(--accent-color); color: var(--accent-color); }
+
+        .back-btn:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
 
         /* Cuadrícula de fotos */
         .photo-grid {
@@ -58,28 +83,35 @@
         }
 
         .photo-grid img:hover {
-            transform: scale(1.02); /* Pequeño zoom al pasar el mouse */
+            transform: scale(1.02);
+            /* Pequeño zoom al pasar el mouse */
         }
     </style>
 </head>
+
 <body>
 
     <a href="index.html" class="back-btn">← Volver al Portafolio</a>
 
     <div class="header-gallery">
         <h1>Impases del Arte</h1>
-        <p>Una exploración de los momentos que definen la esencia visual del desahogo en la musica transformada en arte.</p>
+        <p>Una exploración de los momentos que definen la esencia visual del desahogo en la musica transformada en arte.
+        </p>
     </div>
 
     <!-- Contenedor del PDF -->
     <div class="pdf-container" style="text-align: center; margin: 40px 0;">
-        
-        <iframe src="Elvis_Salazar_Hosman_Nieto_CORTE2_FotoGR3.pdf" width="100%" height="600px" style="border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px;">
+
+        <iframe src="Portafolio Fotográfico_ Música como Desahogo.pdf" width="100%" height="600px"
+            style="border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 8px;">
             <!-- Este texto solo aparece si el navegador del usuario es muy antiguo y no soporta PDFs -->
-            <p>Tu navegador no soporta la visualización de PDFs. Puedes <a href="Elvis_Salazar_Hosman_Nieto_CORTE2_FotoGR3.pdf" style="color: #d4af37;">descargar el documento aquí</a>.</p>
+            <p>Tu navegador no soporta la visualización de PDFs. Puedes <a
+                    href="Portafolio Fotográfico_ Música como Desahogo.pdf" style="color: #d4af37;">descargar el
+                    documento aquí</a>.</p>
         </iframe>
 
     </div>
 
 </body>
+
 </html>
